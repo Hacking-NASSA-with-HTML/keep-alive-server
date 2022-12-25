@@ -9,15 +9,21 @@ function closeWin() {
     // myWindow = window.close("https://www.w3schools.com", "_blank", "width=500, height=500");
 }
 
-//https://render-back-end-nikky-pedia.onrender.com/
-// (function cycle() {
-//     document.getElementById('open').click()
-//     console.log("Button is clicked")
-//     setTimeout(cycle, 4000)
-// })()
-
-
-setTimeout(() => {
+(function open() {
     openWin()
-    // document.getElementById('open').click()
-}, 3000)
+    console.log("Site is Opened")
+    setTimeout(open, 200000)
+})()
+setTimeout(() => {
+    (function close() {
+        closeWin()
+        console.log("Site is Closed")
+        setTimeout(close, 200000)
+    })()
+}, 150000)
+
+
+// setTimeout(() => {
+//     openWin()
+//     // document.getElementById('open').click()
+// }, 3000)

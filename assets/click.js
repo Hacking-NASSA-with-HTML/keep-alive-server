@@ -1,7 +1,7 @@
 let myWindow;
 
 function openWin() {
-    myWindow = window.open("https://www.w3schools.com", "name", "width=500, height=500");
+    myWindow = window.open("https://nikky-pedia-r.netlify.app/", "name", "width=500, height=500");
 }
 
 function closeWin() {

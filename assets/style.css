@@ -1,0 +1,12 @@
+#body {
+    background-color: #0f0576;
+    color: white;
+    min-width: 90vw;
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: calc(13px + (25 - 13) * ((100vw - 300px) / (1600 - 300)));
+    font-family: sans-serif;
+}

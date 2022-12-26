@@ -10,21 +10,21 @@ function closeWin() {
 }
 
 // Endless Cycle:
-// (function open() {
-//     openWin()
-//     console.log("Site is Opened")
-//     setTimeout(open, 200000)
-// })()
-// setTimeout(() => {
-//     (function close() {
-//         closeWin()
-//         console.log("Site is Closed")
-//         setTimeout(close, 200000)
-//     })()
-// }, 150000)
-
-
-setTimeout(() => {
+(function open() {
     openWin()
-    // document.getElementById('open').click()
-}, 3000)
+    console.log("Site is Opened")
+    setTimeout(open, 200000)
+})()
+setTimeout(() => {
+    (function close() {
+        closeWin()
+        console.log("Site is Closed")
+        setTimeout(close, 200000)
+    })()
+}, 150000)
+
+
+// setTimeout(() => {
+//     openWin()
+//     // document.getElementById('open').click()
+// }, 3000)

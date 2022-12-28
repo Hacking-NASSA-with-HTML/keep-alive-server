@@ -7,7 +7,7 @@ function mainPageContent() {
                     Wake Up Server app
                 </p>
                 <p class="paragraph">
-                    <a id="myAnchor" class="link" title="do not sleep, lazy az" href="https://render-back-end-nikky-pedia.onrender.com/">It must be clicked</a>
+                    <a id="myAnchor" class="link" title="do not sleep, lazy az" href="https://nikky-pedia-r.netlify.app/home/">It must be clicked</a>
                 </p>
                 <h1>The Window Object</h1>
                 <h2>The open() and close() Methods</h2>

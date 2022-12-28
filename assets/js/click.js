@@ -11,7 +11,7 @@ function closeWin() {
 
 // Endless Cycle:
 let setToutOpen
-let cycleTout
+let delayTout
 let setToutClose
 
 function runInfiniteLoopFunction() {
@@ -20,7 +20,7 @@ function runInfiniteLoopFunction() {
         console.log("Site is Opened")
         setToutOpen = setTimeout(open, 200000)
     })()
-    cycleTout = setTimeout(() => {
+    delayTout = setTimeout(() => {
         (function close() {
             closeWin()
             console.log("Site is Closed")
@@ -32,7 +32,7 @@ function runInfiniteLoopFunction() {
 
 function stopInfiniteLoopFunction() {
     clearTimeout(setToutOpen)
-    clearTimeout(cycleTout)
+    clearTimeout(delayTout)
     clearTimeout(setToutClose)
     closeWin()
     // console.log("Stopped Running Infinite")

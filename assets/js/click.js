@@ -44,18 +44,6 @@ function handleUserChoice(userChoice) {
     }
 }
 
-// function runOneTimeOnlyLoopFunction() {
-//     // Open the window
-//     setTimeout(() => {
-//         openWin()
-//         // document.getElementById('open').click()
-//     }, 3000)
-//     // Close the window
-//     setTimeout(() => {
-//         closeWin()
-//     }, 10000)
-// }
-
 
 let infiniteRunButton = document.getElementById('infiniteRun');
 infiniteRunButton.innerText = 'Run Infinite Loop'

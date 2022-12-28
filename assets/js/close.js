@@ -1,5 +1,5 @@
 
 // Close the window
-setTimeout(() => {
-    closeWin()
-}, 10000)
+// setTimeout(() => {
+//     closeWin()
+// }, 10000)

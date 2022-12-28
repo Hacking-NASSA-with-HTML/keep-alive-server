@@ -14,6 +14,7 @@ function mainPageContent() {
 
                 <button id="open" onclick="openWin()">Open "myWindow"</button>
                 <button id="close" onclick="closeWin()">Close "myWindow"</button>
+                <div><button id="infiniteRun"></button></div>
             </div>
         `
     return renderMainPageContent

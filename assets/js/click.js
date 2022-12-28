@@ -10,25 +10,25 @@ function closeWin() {
 }
 
 // Endless Cycle:
-function runTheInfiniteLoopFunction() {
-    // (function open() {
-    //     openWin()
-    //     console.log("Site is Opened")
-    //     setTimeout(open, 200000)
-    // })()
-    // setTimeout(() => {
-    //     (function close() {
-    //         closeWin()
-    //         console.log("Site is Closed")
-    //         setTimeout(close, 200000)
-    //     })()
-    // }, 150000)
-    console.log("Running Infinite")
+function runInfiniteLoopFunction() {
+    (function open() {
+        openWin()
+        console.log("Site is Opened")
+        setTimeout(open, 200000)
+    })()
+    setTimeout(() => {
+        (function close() {
+            closeWin()
+            console.log("Site is Closed")
+            setTimeout(close, 200000)
+        })()
+    }, 150000)
+    // console.log("Running Infinite")
 }
 
 function stopInfiniteLoopFunction() {
-    // closeWin()
-    console.log("Stopped Running Infinite")
+    closeWin()
+    // console.log("Stopped Running Infinite")
 }
 
 function handleUserChoice(userChoice) {
@@ -37,7 +37,7 @@ function handleUserChoice(userChoice) {
             stopInfiniteLoopFunction()
             break
         case 'run':
-            runTheInfiniteLoopFunction()
+            runInfiniteLoopFunction()
             break
         default:
             break

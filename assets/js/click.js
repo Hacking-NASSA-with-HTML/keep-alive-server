@@ -1,12 +1,12 @@
-let myWindow;
+let myWindow
 
 function openWin() {
-    myWindow = window.open("https://nikky-pedia-r.netlify.app/home", "name", "width=500, height=500");
+    myWindow = window.open("https://nikky-pedia-r.netlify.app/home", "name", "width=500, height=500")
 }
 
 function closeWin() {
-    myWindow.close();
-    // myWindow = window.close("https://www.w3schools.com", "_blank", "width=500, height=500");
+    myWindow.close()
+    // myWindow = window.close("https://www.w3schools.com", "_blank", "width=500, height=500")
 }
 
 // Endless Cycle:

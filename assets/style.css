@@ -17,7 +17,7 @@
     line-height: 2.5;
     margin: 6vh 0;
     padding: 0 20px;
-    font-size: 2rem;
+    font-size: calc(13px + (25 - 13) * ((100vw - 300px) / (1600 - 300)));
     text-align: center;
     color: #fff;
     text-shadow: 1px 1px 1px #000;

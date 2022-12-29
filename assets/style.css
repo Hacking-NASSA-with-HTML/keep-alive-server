@@ -11,6 +11,40 @@
     font-family: sans-serif;
 }
 
+.link {
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: calc(13px + (25 - 13) * ((100vw - 300px) / (1600 - 300)));
+    transition: .3s ease;
+}
+
+.link:hover {
+    color: #fff;
+    /* transform: scale(1.1); */
+    font-size: calc(20px + (25 - 20) * ((100vw - 300px) / (1600 - 300)));
+}
+
+.button {
+    width: 25vw;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #09a043;
+    color: whitesmoke;
+    font-size: calc(13px + (20 - 13) * ((100vw - 300px) / (1600 - 300)));
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.button:hover {
+    background-color: #26bd15;
+    color: #fff;
+}
+
+.button:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+        inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
+
 .styled {
     border: 0;
     width: 55vw;
